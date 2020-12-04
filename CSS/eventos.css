@@ -1,0 +1,239 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    
+}
+
+section
+{
+    width: 100%;
+    height: 50%;
+    background: url("../img/rosa-negra.jpg");
+    background-size: cover;
+}
+
+section .leftBox
+{
+    width: 50%;
+    height: auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+section .leftBox .content
+{
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    padding: 40px;
+    transition: .5s;
+}
+
+section .leftBox .content:hover
+{
+    background:#069370;
+}
+
+section .leftBox .content h1
+{
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+section .leftBox .content p
+{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+section .events
+{
+    margin-bottom: 70%;
+    position: relative;
+    width: 50%;
+    height: 30%;
+    background: rgba(0, 0, 0, .5);
+    float: right;
+    box-sizing: border-box;
+}
+
+section .events ul
+{
+    position: absolute;
+    top: 10%;
+    transform: translate(-50%);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section .events ul li
+{
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 250px;
+    margin: 15px 0;
+}
+
+section .events ul li .time
+{
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+
+section .events ul li:hover .time
+{
+    background: #069370;
+}
+
+section .events ul li .time h2
+{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+}
+
+section .events ul li .time h2 span
+{
+    font-size: 30px;
+}
+
+section .events ul li .details
+{
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+section .events ul li .details h3
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+section .events ul li .details p
+{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+section .events ul li .details a
+{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 2px solid #262626;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: .5s;
+}
+
+section .events ul li .details a:hover
+{
+    background: #069370;
+    color: #fff;
+    border-color: #069370;
+}
+
+@media (max-width: 991px)
+{
+    section
+    {
+        height: 100%;
+        background-position: center;
+    }
+
+    section .leftBox
+    {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+
+    section .events
+    {
+        width: 100%;
+        height: auto;
+        background: transparent;
+        float: none;
+    }
+
+    section .leftBox .content
+    {
+        padding: 20px;
+    }
+
+    section .leftBox .content h1
+    {
+        font-size: 30px;
+    }
+
+    section .events ul
+    {
+        position: relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+    }
+
+    section .events ul li
+    {
+        height: auto;
+        background: rgba(255, 255, 255, .9);
+    }
+
+    section .events ul li .time
+    {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+    }
+
+    section .events ul li .time h2
+    {
+        font-size: 30px;
+        line-height: 24px;
+    }
+
+    section .events ul li .time h2 span
+    {
+        font-size: 20px;
+    }
+
+    section .events ul li .details
+    {
+        width: 100%;
+        float: none;
+        padding-left: 100px;
+        background: transparent;
+    }
+
+    section .events ul li .details a
+    {
+        padding: 5px 10px;
+    }
+}

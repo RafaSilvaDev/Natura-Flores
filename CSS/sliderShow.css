@@ -1,0 +1,201 @@
+
+.destaque div
+{
+    width: 100%;
+    text-align: center;
+}
+
+.iconCenter img
+{
+    width: 50px;
+    height: 50px;
+}
+
+.fundo 
+{
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(227, 250, 245);
+}
+
+.slogan
+{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    width: 90vw;
+    max-width: 90vw;
+    height: 9.5vh;
+    margin-left: 4vw;
+    background-color:#b5e4d8;
+    text-align: center;
+    color: #069370;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.destaque
+{
+    align-items: center;
+    width: 90vw;
+    max-width: 90vw;
+    margin-top: 5vh;
+    margin-left: 4vw;
+    background-color:#b5e4d8;
+}
+
+.destaque h1
+{
+    color: #069370; 
+}
+
+
+.containerSlider
+{
+    top: 0px;
+    left: 0vw;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 80vh;
+}
+
+.containerSlider .slider
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    /*display?*/
+    animation: animate 10s linear infinite;
+}
+
+.containerSlider .slider .slide
+{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.containerSlider .slider .slide .caption
+{
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    padding: 30px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    transition: 3s;
+}
+
+.containerSlider .slider .slide .caption h2
+{
+    margin: 0 0 20px;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+    transition: 3s;
+}
+
+.containerSlider .slider .slide .caption p
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    transition: 3s;
+}
+
+.containerSlider .slider .slide.slide1
+{
+    background: url("/img/flor-no-sol.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.containerSlider .slider .slide.slide2
+{
+    background: url("/img/homi-segurando-pranta.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.containerSlider .slider .slide.slide3
+{
+    background: url("/img/hortinha.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.containerSlider .slider .slide.slide4
+{
+    background: url("/img/mué-pedindo-pranta.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        left: 0;
+    }
+    20%
+    {
+        left: 0;
+    }
+    25%
+    {
+        left: -100%;
+    }
+    45%
+    {
+        left: -100%;
+    }
+    50%
+    {
+        left: -200%;
+    }
+    70%
+    {
+        left: -200%;
+    }
+    75%
+    {
+        left: -300%;
+    }
+    95%
+    {
+        left: -300%;
+    }
+    100%
+    {
+        left: -400%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .containerSlider .slider .slide .caption
+{
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 20px;
+}
+
+.containerSlider .slider .slide .caption h2
+{
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+.containerSlider .slider .slide .caption p
+{
+    font-size: 18px;
+}
+}
