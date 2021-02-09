@@ -17,12 +17,33 @@ $(document).ready(function () {
   });
 });
 
-// função para slider de produtos na págiga 'produtos'
+// função para swiper na página 'Produtos'
 var swiper = new Swiper(".swiper-container", {
-  slidesPerView: 1.2,
+  slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 });
+
+// função para validação de campos
+function numbers() {
+  // apenas números no campo
+  let key = event.keyCode;
+  if (key >= 48 && key <= 57) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function words() {
+  // apenas letras no campo
+  let key = event.keyCode;
+  if (key >= 48 && key <= 57) {
+    return false;
+  } else {
+    return true;
+  }
+}
